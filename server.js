@@ -4,6 +4,8 @@ const UserModel = require('./model/userSchema');
 const mongoose = require('mongoose');
 const awsHandler = require('./aws');
 const multer = require("multer");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 
 
 const dotenv = require('dotenv');
