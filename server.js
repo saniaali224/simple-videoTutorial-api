@@ -14,7 +14,10 @@ let port = process.env.PORT || 8100;
 
 /*express is using create a http server*/
 const app = express();
-
+app.use(express.json());
+app.use(bodyParser());
+app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 // connect to mongodb
 
 
